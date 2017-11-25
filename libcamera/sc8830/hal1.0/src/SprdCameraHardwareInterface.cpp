@@ -8647,7 +8647,7 @@ static camera_device_ops_t camera_device_ops = {
 	SET_METHOD(send_command),
 	SET_METHOD(release),
 	SET_METHOD(dump),
-};
+}
 
 #undef SET_METHOD
 

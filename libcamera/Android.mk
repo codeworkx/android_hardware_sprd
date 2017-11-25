@@ -17,6 +17,8 @@
 
 #LOCAL_PATH := $(call my-dir)
 
+ifneq ($(USE_CAMERA_STUB),true)
+
 supported_boards := \
 	sc8810 \
 	scx15 \
@@ -28,3 +30,5 @@ endif
 ifeq ($(SOC_SCX30G_V2),true)
 include $(call all-named-subdir-makefiles,sc8830)
 endif
+
+endif # USE_CAMERA_STUB
